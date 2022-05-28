@@ -1,0 +1,120 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: url(image.jpg);
+    background-size: contain
+    background-position: top;
+    font-family: sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+}
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style the "active" element to highlight the current page */
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+
+    /* Style the search box inside the navigation bar */
+    .topnav input[type=text] {
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+    }
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+.best-selling-product-section {
+    position: relative;
+    top: 72px;
+    left: -279px;
+}
+
+.section-title {
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card {
+    border: 15px solid #d5be8b;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background: #d5be8b;
+}
+
+    .product-card:nth-child(even) {
+        border-color: #190c05;
+        background: #190c05;
+    }
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.product-name {
+    position: absolute;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'lato', sans-serif;
+    font-size: 25px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+}
+
+.product-card:hover .product-name {
+    opacity: 1;
+}
+
+.product-card:hover .product-img {
+    opacity: 0.5;
+}

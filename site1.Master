@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site1.master.cs" Inherits="College_Agriculture_project_new.site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">  
+    <title>agriculture_management</title>  
+    <link href="style2.css" rel="stylesheet" />  
+    <asp:ContentPlaceHolder ID="head" runat="server">  
+    </asp:ContentPlaceHolder>  
+</head>  
+<body>  
+    <!DOCTYPE html>  
+<html>  
+<head>  
+    <title>agriculture_management</title>  
+    <link rel="stylesheet" type="text/css" href="style2.css">  
+</head>  
+<body>  
+<header id="header">    
+</header>  
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="login_2.aspx">Logout</a>
+  <input type="text" placeholder="Search..">
+</div>
+
+  
+    <div id="con">  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+              <link rel="stylesheet" type="text/css" href="style1.css">
+
+        </asp:ContentPlaceHolder>  
+    </div>  
+  
+  
+<footer id="footer">  
+    
+</footer>  
+</body>  
+</html>  
+    <form id="form1" runat="server">  
+      
+    </form>  
+</body>  
+</html>
